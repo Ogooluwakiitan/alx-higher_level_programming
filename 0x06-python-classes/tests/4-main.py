@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/python3
 Square = __import__('4-square').Square
 
@@ -12,3 +13,19 @@ try:
     print("Area: {} for size: {}".format(my_square.area(), my_square.size))
 except Exception as e:
     print(e)
+=======
+#!/usr/bin/python3
+Square = __import__('4-square').Square
+
+my_square = Square(89)
+print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+
+my_square.size = 3
+print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+
+try:
+    my_square.size = "5 feet"
+    print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+except Exception as e:
+    print(e)
+>>>>>>> 4a5663aa41e3718aabd1e24d94809b97711d7147
